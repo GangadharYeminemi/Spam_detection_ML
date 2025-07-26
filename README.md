@@ -1,1 +1,20 @@
-Developed a lightweight spam detection web application using Python and Flask to classify text messages as spam or ham. Implemented a Multinomial Naive Bayes classifier with TF-IDF vectorization, trained on the SMS Spam Collection dataset. Created a training script (train.py) to preprocess data and save models, and a Flask backend (app.py) to serve predictions. Designed a responsive frontend with HTML and modern CSS, providing clear visual feedback (red for spam, green for ham, yellow for errors). Utilized simple text processing to minimize dependencies, ensuring easy setup and deployment.
+ SMS Spam Detection
+
+Overview
+This project classifies SMS messages as **Spam** or **Ham** using traditional machine learning. It uses a Naive Bayes classifier trained on a labeled SMS dataset.
+
+Methodology
+- Text preprocessing: cleaning, lowercasing, stopword removal
+- Feature extraction: TF-IDF vectorizer
+- Classification: Multinomial Naive Bayes
+- Model persistence using `joblib`
+
+ Tech Stack
+- Python, Pandas, Scikit-learn
+- TfidfVectorizer, Naive Bayes
+
+Output
+- Trained model: `model.pkl`
+- Vectorizer: `vectorizer.pkl`
+
+
